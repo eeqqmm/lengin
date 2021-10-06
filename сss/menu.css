@@ -1,0 +1,36 @@
+#primary-menu {
+	margin: 0;
+}
+
+#primary-menu li {
+	list-style-type: none;
+}
+
+@media (min-width: 320px) {
+	.container {
+		padding: 0 15px;
+		position: relative;
+		z-index: 10;
+	}
+	#primary-menu {
+		z-index: 10;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		padding-left: 0;
+		grid-gap: 15px;
+	}
+	#primary-menu li {
+		height: 46px;
+		border-radius: 6px;
+		background-color: #3a8063;
+	}
+	#primary-menu li a {
+		line-height: 46px;
+		text-align: center;
+		display: block;
+		color: white;
+		text-decoration: none;
+	}
+}
+
+/*# sourceMappingURL=menu.css.map */

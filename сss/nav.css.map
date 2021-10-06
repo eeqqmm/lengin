@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "nav.css",
+	"sources": [
+		"../sass/nav.sass",
+		"../sass/val.sass"
+	],
+	"names": [],
+	"mappings": "AACA,AAAA,UAAU,CAAC;CACP,SAAS,EAAE,MAAM;CACjB,MAAM,EAAE,MAAM;CAAG"
+}

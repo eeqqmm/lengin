@@ -1,0 +1,28 @@
+@import val
+#primary-menu
+  margin: 0
+  li
+    list-style-type: none
+@media (min-width: $mobile-width)
+  .container
+    padding: 0 15px
+    position: relative
+    z-index: 10
+  #primary-menu
+    z-index: 10
+    display: grid
+    grid-template-columns: repeat(3,1fr)
+    padding-left: 0
+    grid-gap: 15px
+    & li
+      //padding: 15px
+      //margin: 0 15px 10px 10px
+      height: 46px
+      border-radius: 6px
+      background-color: #3a8063
+      & a
+        line-height: 46px
+        text-align: center
+        display: block
+        color: white
+        text-decoration: none

@@ -1,0 +1,127 @@
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+#primary-menu {
+	margin: 0;
+}
+
+#primary-menu li {
+	list-style-type: none;
+}
+
+@media (min-width: 320px) {
+	.container {
+		padding: 0 15px;
+		position: relative;
+		z-index: 10;
+	}
+	#primary-menu {
+		z-index: 10;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		padding-left: 0;
+		grid-gap: 15px;
+	}
+	#primary-menu li {
+		height: 46px;
+		border-radius: 6px;
+		background-color: #3a8063;
+	}
+	#primary-menu li a {
+		line-height: 46px;
+		text-align: center;
+		display: block;
+		color: white;
+		text-decoration: none;
+	}
+}
+
+main {
+	width: 100%;
+	height: 558px;
+	background-image: linear-gradient(29deg, #48a392 0%, #5bc663 100%);
+	margin: 0;
+	position: relative;
+	z-index: 3;
+}
+
+main:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%) translateZ(-1px);
+	background-image: url("../images/ua.png");
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.8;
+	z-index: 1;
+}
+
+body {
+	margin: 0;
+}
+
+.wave {
+	width: 100%;
+	height: 30px;
+	position: relative;
+	transform: rotateZ(180deg);
+}
+
+.wave::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-repeat: repeat;
+	height: 10px;
+	background-size: 20px 20px;
+	background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
+}
+
+.wave::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-repeat: repeat;
+	height: 15px;
+	background-size: 40px 20px;
+	background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
+}
+
+h1 {
+	height: 59px;
+	font-size: 30px;
+	line-height: 34px;
+	color: #ffffff;
+	font-weight: 800;
+	font-family: "Gotham Pro";
+	text-align: center;
+}
+
+@font-face {
+	font-family: "Gotham Pro";
+	src: url("../fonts/GothamPro.woff");
+	font-style: normal;
+	font-weight: normal;
+}
+
+#search {
+	width: 100%;
+	height: 40px;
+	border-radius: 6px;
+	background-color: #ffffff;
+	margin-top: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

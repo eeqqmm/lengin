@@ -33,4 +33,14 @@
 	}
 }
 
+@media (min-width: 1200px) {
+	.container {
+		width: 1000px;
+		padding: 0;
+	}
+	#primary-menu {
+		grid-template-columns: repeat(6, 1fr);
+	}
+}
+
 /*# sourceMappingURL=menu.css.map */
